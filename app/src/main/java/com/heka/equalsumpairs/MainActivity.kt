@@ -10,11 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val equalSumPairs = findEqualSumPairs(arr)
+        val equalSumPairs = equalSumPairs(arr)
         Log.i("HASANLOG",equalSumPairs.toString());
     }
 
-    fun findEqualSumPairs(arr: IntArray): List<Pair<Int, Int>> {
+    fun equalSumPairs(arr: IntArray): List<Pair<Int, Int>> {
         val result = mutableListOf<Pair<Int, Int>>()
         val sumIndicesMap = HashMap<Int, MutableList<Int>>()
 
